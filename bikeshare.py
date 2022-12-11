@@ -135,12 +135,8 @@ def trip_duration_stats(df):
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
 
-    # Display total travel time
-    print('total travel time: ',df['Trip Duration'].sum())
-
-
-    # Display mean travel time
-    print('mean travel time: ',df['Trip Duration'].mean())
+    # Display total travel time and Display mean travel time
+    print('total travel time: ',df['Trip Duration'].sum(), 'mean travel time: ',df['Trip Duration'].mean())
 
 
 
@@ -165,8 +161,7 @@ def user_stats(df,city):
 
     # Display earliest, most recent, and most common year of birth
     if city != 'washington':
-        print('earliest year: ',df['Birth Year'].min()) 
-        print('most recent: ',df['Birth Year'].max())
+        print('earliest year: ',df['Birth Year'].min(), 'most recent year of birth: ',df['Birth Year'].max()) 
         print('most common year of birth: ',df['Birth Year'].value_counts())
     
 
