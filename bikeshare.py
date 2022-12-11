@@ -165,8 +165,7 @@ def user_stats(df,city):
 
     # Display earliest, most recent, and most common year of birth
     if city != 'washington':
-        print('earliest year: ',df['Birth Year'].min()) 
-        print('most recent: ',df['Birth Year'].max())
+        print('earliest year: ',df['Birth Year'].min(), 'most recent year of birth: ',df['Birth Year'].max()) 
         print('most common year of birth: ',df['Birth Year'].value_counts())
     
 
