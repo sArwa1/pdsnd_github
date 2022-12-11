@@ -187,7 +187,7 @@ def main():
         
         count=0
         while True:
-            rawData = input('Would you like to see the raw data? yes or no: ')
+            rawData = input('if you want to see the raw data type yes, if not type no')
             if rawData.lower() != 'yes':
                 break
             print(df[count:count+5])
